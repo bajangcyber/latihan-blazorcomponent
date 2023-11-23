@@ -1,0 +1,364 @@
+﻿@page "/initialcheck"
+<h3>InitialCheck</h3>
+<style>
+    .container-with-scroll {
+        max-height: 600px;
+        overflow-y: auto;
+    }
+
+    .fixed-label-col {
+        flex: 0 0 200px; /* Lebar tetap 150px */
+    }
+
+    .col {
+        flex: 1; /* Kolom kedua mengisi sisa ruang */
+    }
+
+    .fixed-label {
+        max-width: Auto;
+        display: inline-block;
+    }
+
+    .vertical-separator {
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        background-color: #ccc; /* Warna garis pemisah */
+        left: 50%; /* Letakkan di tengah kolom */
+        transform: translateX(-50%); /* Koreksi posisi di tengah */
+    }
+
+    #fixed-label-col {
+        flex: 0 0 170px;
+    }
+
+    .col-5-with-border {
+        border-left: 2px solid #000; /* Warna dan ketebalan border dapat disesuaikan */
+    }
+
+</style>
+<div class="container container-with-scroll">
+    <form>
+        <div class="d-flex mb-3">
+            <div class="fixed-label-col">
+                <label for="input1" class="form-label fixed-label">Assesmen Awal</label>
+            </div>
+            <div class="col">
+                <button type="submit" class="btn btn-primary">Ases</button>
+                <label style="background-color:grey"> Belum skrining</label>
+            </div>
+        </div>
+
+        <div class="d-flex mb-3">
+            <div class="fixed-label-col">
+                <label for="input2" class="form-label fixed-label">Tujuan</label>
+            </div>
+            <div class="col">
+                <TelerikDropDownList Data="@DropDownData" TextField="@nameof(YourItem.TextProperty)" ValueField="@nameof(YourItem.ValueProperty)" @bind-Value="@selectedValue" />
+            </div>
+        </div>
+
+        <div class="d-flex mb-3">
+            <div class="fixed-label-col">
+                <label for="input3" class="form-label fixed-label">Keluhan Utama(ICPC)</label>
+            </div>
+            <div class="col">
+                <TelerikDropDownList Data="@DropDownData" TextField="@nameof(YourItem.TextProperty)" ValueField="@nameof(YourItem.ValueProperty)" @bind-Value="@selectedValue" />
+            </div>
+        </div>
+
+        <div class="d-flex mb-3">
+            <div class="fixed-label-col">
+                <label for="input4" class="form-label fixed-label">Keadaan Sakit</label>
+            </div>
+            <div class="col">
+                <TelerikRadioGroup Data="@CommunicationTypes" Layout="RadioGroupLayout.Horizontal"
+                @bind-Value="@SelectedCommunicationType"></TelerikRadioGroup>
+            </div>
+        </div>
+
+        <div class="d-flex mb-3">
+            <div class="fixed-label-col">
+                <label for="input4" class="form-label fixed-label">Kesadaran</label>
+            </div>
+            <div class="col">
+                <TelerikRadioGroup Data="@AwarenessTypes" Layout="RadioGroupLayout.Horizontal"
+                @bind-Value="@SelectedAwareness"></TelerikRadioGroup>
+            </div>
+        </div>
+        <div class="d-flex mb-3">
+            <div class="fixed-label-col">
+                <label for="input4" class="form-label fixed-label">Nama Kepala Keluarga</label>
+            </div>
+            <div class="col">
+                <button type="submit" class="btn btn-primary">Skrinning</button>
+            </div>
+        </div>
+        <div class="d-flex mb-3">
+            <div class="fixed-label-col">
+                <label for="input4" class="form-label fixed-label">Skala Nyeri</label>
+            </div>
+            <div class="col">
+                <TelerikCheckBox Id="myCheckBox" @bind-Value="@hasAgreed" />
+                <label for="myCheckBox">Tidak Ditanya</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+                <TelerikRangeSlider  @bind-StartValue="@MinPrice"
+                @bind-EndValue="@MaxPrice"
+                @ref="@TheRangeSlider"
+                                    Min="0"
+                                    Max="10"
+                                    SmallStep="1"
+                                    LargeStep="1">
+                </TelerikRangeSlider>
+            </div>
+        </div>
+
+        <div class="d-flex mb-3">
+            <div class="row">
+                <div class="col-9">
+                    <div class="d-flex mb-3">
+
+                        <div class="fixed-label-col">
+                            <label for="input4" class="form-label fixed-label">Skala Atatistik</label>
+                        </div>
+                        <div class="col">
+                        </div>
+                    </div>
+                    <div class="d-flex mb-2">
+
+                        <div class="fixed-label-col">
+                            <label for="input4" class="form-label fixed-label">Sistol</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="input4" placeholder="Enter value for Field 4" style="width:auto">
+                        </div>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <div class="fixed-label-col">
+                            <label for="input4" class="form-label fixed-label">Diastol</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="input4" placeholder="Enter value for Field 4" style="width:auto">
+                        </div>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <div class="fixed-label-col">
+                            <label for="input4" class="form-label fixed-label">Detak Jantung</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="input4" placeholder="Enter value for Field 4" style="width:auto">
+                        </div>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <div class="fixed-label-col">
+                            <label for="input4" class="form-label fixed-label">Napas</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="input4" placeholder="Enter value for Field 4" style="width:auto">
+                        </div>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <div class="fixed-label-col">
+                            <label for="input4" class="form-label fixed-label">Suhu Badan</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="input4" placeholder="Enter value for Field 4" style="width:auto">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 col-5-with-border">
+                    <div class="d-flex mb-3">
+
+                        <div id="fixed-label-col">
+                            <label for="input4" class="form-label fixed-label">Skala Antropometri</label>
+                        </div>
+                        <div class="col">
+                        </div>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <div id="fixed-label-col">
+                            <label for="input4" class="form-label fixed-label">Tinggi Badan</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="input4" placeholder="Enter value for Field 4" style="width:auto">
+                        </div>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <div id="fixed-label-col">
+                            <label for="input4" class="form-label fixed-label">Berat Badan</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="input4" placeholder="Enter value for Field 4" style="width:auto">
+                        </div>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <div id="fixed-label-col">
+                            <label for="input4" class="form-label fixed-label">IMT</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="input4" placeholder="Enter value for Field 4" style="width:auto">
+                        </div>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <div id="fixed-label-col">
+                            <label for="input4" class="form-label fixed-label">Lingkar Perut</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="input4" placeholder="Enter value for Field 4" style="width:auto">
+                        </div>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <div id="fixed-label-col">
+                            <label for="input4" class="form-label fixed-label">Lingkar Panggul</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="input4" placeholder="Enter value for Field 4" style="width:auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </form>
+</div>
+
+
+@code {
+
+    private bool hasAgreed { get; set; }
+    TelerikRangeSlider<decimal> TheRangeSlider { get; set; }
+
+    decimal MinPrice { get; set; } = 0;
+    decimal MaxPrice { get; set; } = 10;
+
+     public List<Equipment> EquipmentList { get; set; }
+
+    public bool SelectAllValue
+    {
+        get
+        {
+            return EquipmentList.All(eq => eq.Purchased || eq.OutOfStock);
+        }
+    }
+
+    public bool SelectAllIndeterminate
+    {
+        get
+        {
+            return EquipmentList.Any(eq => eq.Purchased && !eq.OutOfStock) && !SelectAllValue;
+        }
+    }
+
+
+    protected string selectedOption { get; set; } = "TampakSehat";
+    List<YourItem> DropDownData = new List<YourItem>
+    {
+        new YourItem { TextProperty = "Option 1", ValueProperty = 1 },
+        new YourItem { TextProperty = "Option 2", ValueProperty = 2 },
+        // ... tambahkan data sesuai kebutuhan
+    };
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        EquipmentList = new List<Equipment>()
+        {
+            new Equipment("Tidak Ditanya"),
+           
+        };
+
+    }
+    int? selectedValue { get; set; }
+
+    // Gantilah dengan model yang sesuai dengan kebutuhan Anda
+    public class YourItem
+    {
+        public string TextProperty { get; set; }
+        public int ValueProperty { get; set; }
+    }
+
+    public CommunicationType SelectedCommunicationType { get; set; } = CommunicationType.TampakSehat;
+    public List<CommunicationTypeModel> CommunicationTypes { get; set; } = new List<CommunicationTypeModel>()
+    {
+        new CommunicationTypeModel() { Text = "Tampak Sehat", Value = CommunicationType.TampakSehat },
+        new CommunicationTypeModel() { Text = "Sakit Ringan", Value = CommunicationType.SakitRingan },
+        new CommunicationTypeModel() { Text = "Sakit Sedang", Value = CommunicationType.SakitSedang },
+        new CommunicationTypeModel() { Text = "Sakit Berat", Value = CommunicationType.SakitBerat }
+    };
+
+    public AwarenessType SelectedAwareness { get; set; } = AwarenessType.ComposMentis;
+    public List<CommunicationTypeModel> AwarenessTypes { get; set; } = new List<CommunicationTypeModel>()
+    {
+        new CommunicationTypeModel() { Text = "Compos Mentis", AwarenessValue = AwarenessType.ComposMentis },
+        new CommunicationTypeModel() { Text = "Apati", AwarenessValue = AwarenessType.Apati },
+        new CommunicationTypeModel() { Text = "Samnolen", AwarenessValue = AwarenessType.Samnolen },
+        new CommunicationTypeModel() { Text = "Delirium", AwarenessValue = AwarenessType.Delirium }
+    };
+
+    public class CommunicationTypeModel
+    {
+        public string Text { get; set; }
+        public CommunicationType Value { get; set; }
+        public AwarenessType AwarenessValue { get; set; }
+
+        public CommunicationTypeModel()
+        {
+        }
+    }
+
+    public enum CommunicationType
+    {
+        TampakSehat,
+        SakitRingan,
+        SakitSedang,
+        SakitBerat
+    }
+    
+    public enum AwarenessType
+    {
+        ComposMentis,
+        Apati,
+        Samnolen,
+        Delirium
+    }
+
+
+    private void ValueChanged(bool value)
+    {
+        EquipmentList.ForEach(eq =>
+        {
+            if (!eq.OutOfStock)
+            {
+                eq.Purchased = value;
+            }
+        });
+    }
+    public class Equipment
+    {
+        public bool Purchased { get; set; }
+        public bool OutOfStock { get; set; }
+        public string Summary { get; set; }
+
+        public Equipment(string summary)
+        {
+            Summary = summary;
+        }
+
+        public Equipment(string summary, bool purchased)
+        {
+            Summary = summary;
+            Purchased = purchased;
+        }
+
+        public Equipment(string summary, bool purchased, bool outOfStock)
+            : this(summary, purchased)
+        {
+            OutOfStock = outOfStock;
+        }
+    }
+
+
+}
