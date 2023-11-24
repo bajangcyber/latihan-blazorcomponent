@@ -131,17 +131,15 @@ Phasellus auctor congue nisl, vel dapibus risus ultrices vel. Proin fermentum ma
         base.OnInitialized();
     }
 } *@
-
-
 <div class="container">
     <header>
-        <h1 style="margin: 0;">Header Content</h1>
+        <h1 style="margin: 0; font-size: 24px;">Header Content</h1>
     </header>
 
     <div class="content">
         <div class="column" style="width: 150px;">
             <h2>Column 1</h2>
-            <TelerikMenu Data="MenuItems" Orientation="@MenuOrientation.Vertical"></TelerikMenu>
+            <p>This is the content of column 1.</p>
         </div>
         <div class="column" style="flex: 1;">
             <h2>Column 2</h2>
@@ -159,12 +157,11 @@ Phasellus auctor congue nisl, vel dapibus risus ultrices vel. Proin fermentum ma
         display: flex;
         flex-direction: column;
         min-height: 100vh;
-        margin: 20px;
+        margin: 0; /* Set margin to 0 */
     }
 
     header, footer {
-        background-color: #333;
-        color: white;
+        color: #333;
         padding: 10px;
         text-align: center;
     }
@@ -172,7 +169,6 @@ Phasellus auctor congue nisl, vel dapibus risus ultrices vel. Proin fermentum ma
     .content {
         flex: 1;
         display: flex;
-        padding-top:0rem;
     }
 
     .column {
@@ -180,7 +176,6 @@ Phasellus auctor congue nisl, vel dapibus risus ultrices vel. Proin fermentum ma
         border: 1px solid #ddd; /* Optional: Add a border between columns */
     }
 </style>
-
 
 @code {
 
