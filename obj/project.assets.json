@@ -5467,23 +5467,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Famila\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Progress\\ToolboxNuGetPackages": {}
+    "C:\\Users\\MIS-SLS-01\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Famila\\source\\repos\\BlazorCrateComponent\\BlazorCrateComponent\\BlazorCrateComponent.csproj",
+      "projectUniqueName": "D:\\BlazorComponent\\latihan-blazorcomponent\\BlazorCrateComponent.csproj",
       "projectName": "BlazorCrateComponent",
-      "projectPath": "C:\\Users\\Famila\\source\\repos\\BlazorCrateComponent\\BlazorCrateComponent\\BlazorCrateComponent.csproj",
-      "packagesPath": "C:\\Users\\Famila\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Famila\\source\\repos\\BlazorCrateComponent\\BlazorCrateComponent\\obj\\",
+      "projectPath": "D:\\BlazorComponent\\latihan-blazorcomponent\\BlazorCrateComponent.csproj",
+      "packagesPath": "C:\\Users\\MIS-SLS-01\\.nuget\\packages\\",
+      "outputPath": "D:\\BlazorComponent\\latihan-blazorcomponent\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Progress\\ToolboxNuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Famila\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MIS-SLS-01\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Telerik UI for WPF.config"
       ],
@@ -5491,8 +5487,8 @@
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\Famila\\.nuget\\packages": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages": {},
+        "C:\\Users\\MIS-SLS-01\\.nuget\\packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -5527,6 +5523,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.25, 6.0.25]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.25, 6.0.25]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.25, 6.0.25]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.25, 6.0.25]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -5535,7 +5549,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }
