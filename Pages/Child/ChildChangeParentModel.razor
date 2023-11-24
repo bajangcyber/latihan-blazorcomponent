@@ -1,0 +1,17 @@
+﻿<h3>Komponen anak</h3>
+
+<button @onclick="UpdateDataPerson">Update Data</button>
+@code {
+
+    [Parameter]
+    public Person PersonChild { get; set; }
+
+    [Parameter]
+    public EventCallback<Person> PersonChildChanged { get; set; }
+
+    private void UpdateDataPerson()
+    {
+        PersonChild.Name = "nama anak Fahd";
+        PersonChildChanged.InvokeAsync(PersonChild);
+    }
+}

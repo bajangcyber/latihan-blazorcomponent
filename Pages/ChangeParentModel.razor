@@ -1,0 +1,29 @@
+﻿@page "/parentchildmodel"
+<h3>ChangeParentModel</h3>
+
+<h2> Komponen Orang tua</h2
+<ChildChangeParentModel @bind-PersonChild="person"></ChildChangeParentModel>
+
+nama orangtua @person.Name
+
+<br /><br /><br />
+<button @onclick="UpdateData">Update Orang Tua</button>
+@code {
+    private Person person { get; set; }
+
+    protected override Task OnInitializedAsync()
+    {
+
+        person = new Person()
+            {
+                Name = "Parent Multazam Yamani"
+            };
+
+        return base.OnInitializedAsync();
+    }
+
+    private void UpdateData()
+    {
+        person.Name = "Multazam Yamani";
+    }
+}
