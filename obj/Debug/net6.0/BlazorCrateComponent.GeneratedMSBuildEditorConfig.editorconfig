@@ -44,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5pdGlhbENoZWNrLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/BlazorComponent/latihan-blazorcomponent/Pages/TabStripComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiU3RyaXBDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/BlazorComponent/latihan-blazorcomponent/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
