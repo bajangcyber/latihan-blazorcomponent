@@ -9,69 +9,69 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BlazorCrateComponent
 build_property.RootNamespace = BlazorCrateComponent
-build_property.ProjectDir = D:\BlazorComponent\latihan-blazorcomponent\
+build_property.ProjectDir = C:\Users\Famila\source\repos\BlazorCrateComponent\BlazorCrateComponent\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\BlazorComponent\latihan-blazorcomponent
+build_property.MSBuildProjectDirectory = C:\Users\Famila\source\repos\BlazorCrateComponent\BlazorCrateComponent
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/BlazorComponent/latihan-blazorcomponent/App.razor]
+[C:/Users/Famila/source/repos/BlazorCrateComponent/BlazorCrateComponent/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BlazorComponent/latihan-blazorcomponent/Pages/ChangeParentModel.razor]
+[C:/Users/Famila/source/repos/BlazorCrateComponent/BlazorCrateComponent/Pages/ChangeParentModel.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhbmdlUGFyZW50TW9kZWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BlazorComponent/latihan-blazorcomponent/Pages/Child/ChildChangeParentModel.razor]
+[C:/Users/Famila/source/repos/BlazorCrateComponent/BlazorCrateComponent/Pages/Child/ChildChangeParentModel.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hpbGRcQ2hpbGRDaGFuZ2VQYXJlbnRNb2RlbC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BlazorComponent/latihan-blazorcomponent/Pages/Counter.razor]
+[C:/Users/Famila/source/repos/BlazorCrateComponent/BlazorCrateComponent/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BlazorComponent/latihan-blazorcomponent/Pages/FetchData.razor]
+[C:/Users/Famila/source/repos/BlazorCrateComponent/BlazorCrateComponent/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BlazorComponent/latihan-blazorcomponent/Pages/Index.razor]
+[C:/Users/Famila/source/repos/BlazorCrateComponent/BlazorCrateComponent/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BlazorComponent/latihan-blazorcomponent/Pages/InitialCheck.razor]
+[C:/Users/Famila/source/repos/BlazorCrateComponent/BlazorCrateComponent/Pages/InitialCheck.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5pdGlhbENoZWNrLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BlazorComponent/latihan-blazorcomponent/Pages/TabStripComponent.razor]
+[C:/Users/Famila/source/repos/BlazorCrateComponent/BlazorCrateComponent/Pages/TabStripComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiU3RyaXBDb21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BlazorComponent/latihan-blazorcomponent/Shared/SurveyPrompt.razor]
+[C:/Users/Famila/source/repos/BlazorCrateComponent/BlazorCrateComponent/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BlazorComponent/latihan-blazorcomponent/_Imports.razor]
+[C:/Users/Famila/source/repos/BlazorCrateComponent/BlazorCrateComponent/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BlazorComponent/latihan-blazorcomponent/Shared/MainLayout.razor]
+[C:/Users/Famila/source/repos/BlazorCrateComponent/BlazorCrateComponent/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-qfxxm1o1u7
 
-[D:/BlazorComponent/latihan-blazorcomponent/Shared/NavMenu.razor]
+[C:/Users/Famila/source/repos/BlazorCrateComponent/BlazorCrateComponent/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-egd8v3in22
 
-[D:/BlazorComponent/latihan-blazorcomponent/Pages/Error.cshtml]
+[C:/Users/Famila/source/repos/BlazorCrateComponent/BlazorCrateComponent/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BlazorComponent/latihan-blazorcomponent/Pages/_Host.cshtml]
+[C:/Users/Famila/source/repos/BlazorCrateComponent/BlazorCrateComponent/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BlazorComponent/latihan-blazorcomponent/Pages/_Layout.cshtml]
+[C:/Users/Famila/source/repos/BlazorCrateComponent/BlazorCrateComponent/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
