@@ -1,0 +1,238 @@
+﻿@page "/tabstripcomponent"
+
+@* 
+<style>
+    /* Gaya untuk latar belakang dan hover di TelerikMenu */
+    .telerik-menu-item {
+        background-color: #3498db; /* Warna latar belakang */
+        color: #fff; /* Warna teks */
+    }
+
+        .telerik-menu-item:hover {
+            background-color: #2980b9; /* Warna latar belakang saat dihover */
+        }
+</style> *@
+
+@* 
+<div class="container">
+    <div class="row" style="margin-left: 130px;">
+            <!-- TelerikMenu Horizontal di Baris 1, Kolom 2 -->
+            <div style="height: auto;">
+                <TelerikMenu Data="MenuItems"></TelerikMenu>
+            </div>
+        </div>
+    <div class="row">
+        <div class="col-md-2" style="height: 600px; overflow-y: auto; width: auto; margin-top:15px">
+            <!-- TelerikMenu Vertical di Baris 2, Kolom 1 -->
+            <div style="height: 600px; overflow-y: auto;">
+                <TelerikMenu Data="MenuItems" Orientation="@MenuOrientation.Vertical"></TelerikMenu>
+            </div>
+        </div>
+        <-- <div class="col-md-10" style="border-top: 1px solid #000; border-left: 1px solid #000; margin:20px; overflow-y: auto;"> -->
+        <div class="col-md-10" style="border-top: 1px solid #000; border-left: 1px solid #000; margin:20px;">
+            <!-- Konten Utama di Baris 2, Kolom 2 -->
+            <div class="main-content" style="height: 100vh; overflow-y: auto;">
+               <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat risus ut neque facilisis, in consectetur est hendrerit. Integer vel ante id nisi rhoncus hendrerit. Curabitur id quam id nunc ultricies auctor. Nullam accumsan mauris a augue facilisis, et imperdiet dui dignissim. Nunc vel dictum nisi. Nullam ac tortor odio. Suspendisse potenti. Duis vel sapien libero. Vivamus eleifend odio eu risus volutpat, sit amet gravida leo cursus. Nam imperdiet eu arcu in volutpat. Aenean hendrerit mauris ut hendrerit facilisis. Sed sagittis sapien ac augue suscipit, ut venenatis justo venenatis.
+
+                    Phasellus auctor congue nisl, vel dapibus risus ultrices vel. Proin fermentum mauris vitae quam tristique, eget vehicula odio fermentum. Vestibulum in varius nisl. Nam ultricies erat in urna aliquam, et fringilla quam bibendum. Vestibulum tristique facilisis risus, at varius orci semper id. Nullam dignissim luctus turpis a fermentum. Vestibulum condimentum lacus at leo vulputate, id dictum sem dictum. Fusce et odio nec tellus semper sodales. Maecenas eu malesuada felis. Praesent quis dolor vitae sem scelerisque hendrerit eget id dolor. Ut nec erat eu urna facilisis aliquet. Sed a tortor a turpis luctus malesuada. Ut euismod sagittis diam, vel sagittis ligula egestas eu. Sed facilisis, dolor vel suscipit mattis, ex ligula facilisis odio, eu sagittis quam ex ut erat.
+               </p>
+               <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat risus ut neque facilisis, in consectetur est hendrerit. Integer vel ante id nisi rhoncus hendrerit. Curabitur id quam id nunc ultricies auctor. Nullam accumsan mauris a augue facilisis, et imperdiet dui dignissim. Nunc vel dictum nisi. Nullam ac tortor odio. Suspendisse potenti. Duis vel sapien libero. Vivamus eleifend odio eu risus volutpat, sit amet gravida leo cursus. Nam imperdiet eu arcu in volutpat. Aenean hendrerit mauris ut hendrerit facilisis. Sed sagittis sapien ac augue suscipit, ut venenatis justo venenatis.
+
+                    Phasellus auctor congue nisl, vel dapibus risus ultrices vel. Proin fermentum mauris vitae quam tristique, eget vehicula odio fermentum. Vestibulum in varius nisl. Nam ultricies erat in urna aliquam, et fringilla quam bibendum. Vestibulum tristique facilisis risus, at varius orci semper id. Nullam dignissim luctus turpis a fermentum. Vestibulum condimentum lacus at leo vulputate, id dictum sem dictum. Fusce et odio nec tellus semper sodales. Maecenas eu malesuada felis. Praesent quis dolor vitae sem scelerisque hendrerit eget id dolor. Ut nec erat eu urna facilisis aliquet. Sed a tortor a turpis luctus malesuada. Ut euismod sagittis diam, vel sagittis ligula egestas eu. Sed facilisis, dolor vel suscipit mattis, ex ligula facilisis odio, eu sagittis quam ex ut erat.
+               </p>
+               <p>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat risus ut neque facilisis, in consectetur est hendrerit. Integer vel ante id nisi rhoncus hendrerit. Curabitur id quam id nunc ultricies auctor. Nullam accumsan mauris a augue facilisis, et imperdiet dui dignissim. Nunc vel dictum nisi. Nullam ac tortor odio. Suspendisse potenti. Duis vel sapien libero. Vivamus eleifend odio eu risus volutpat, sit amet gravida leo cursus. Nam imperdiet eu arcu in volutpat. Aenean hendrerit mauris ut hendrerit facilisis. Sed sagittis sapien ac augue suscipit, ut venenatis justo venenatis.
+
+Phasellus auctor congue nisl, vel dapibus risus ultrices vel. Proin fermentum mauris vitae quam tristique, eget vehicula odio fermentum. Vestibulum in varius nisl. Nam ultricies erat in urna aliquam, et fringilla quam bibendum. Vestibulum tristique facilisis risus, at varius orci semper id. Nullam dignissim luctus turpis a fermentum. Vestibulum condimentum lacus at leo vulputate, id dictum sem dictum. Fusce et odio nec tellus semper sodales. Maecenas eu malesuada felis. Praesent quis dolor vitae sem scelerisque hendrerit eget id dolor. Ut nec erat eu urna facilisis aliquet. Sed a tortor a turpis luctus malesuada. Ut euismod sagittis diam, vel sagittis ligula egestas eu. Sed facilisis, dolor vel suscipit mattis, ex ligula facilisis odio, eu sagittis quam ex ut erat.
+               </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat risus ut neque facilisis, in consectetur est hendrerit. Integer vel ante id nisi rhoncus hendrerit. Curabitur id quam id nunc ultricies auctor. Nullam accumsan mauris a augue facilisis, et imperdiet dui dignissim. Nunc vel dictum nisi. Nullam ac tortor odio. Suspendisse potenti. Duis vel sapien libero. Vivamus eleifend odio eu risus volutpat, sit amet gravida leo cursus. Nam imperdiet eu arcu in volutpat. Aenean hendrerit mauris ut hendrerit facilisis. Sed sagittis sapien ac augue suscipit, ut venenatis justo venenatis.
+
+                    Phasellus auctor congue nisl, vel dapibus risus ultrices vel. Proin fermentum mauris vitae quam tristique, eget vehicula odio fermentum. Vestibulum in varius nisl. Nam ultricies erat in urna aliquam, et fringilla quam bibendum. Vestibulum tristique facilisis risus, at varius orci semper id. Nullam dignissim luctus turpis a fermentum. Vestibulum condimentum lacus at leo vulputate, id dictum sem dictum. Fusce et odio nec tellus semper sodales. Maecenas eu malesuada felis. Praesent quis dolor vitae sem scelerisque hendrerit eget id dolor. Ut nec erat eu urna facilisis aliquet. Sed a tortor a turpis luctus malesuada. Ut euismod sagittis diam, vel sagittis ligula egestas eu. Sed facilisis, dolor vel suscipit mattis, ex ligula facilisis odio, eu sagittis quam ex ut erat.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat risus ut neque facilisis, in consectetur est hendrerit. Integer vel ante id nisi rhoncus hendrerit. Curabitur id quam id nunc ultricies auctor. Nullam accumsan mauris a augue facilisis, et imperdiet dui dignissim. Nunc vel dictum nisi. Nullam ac tortor odio. Suspendisse potenti. Duis vel sapien libero. Vivamus eleifend odio eu risus volutpat, sit amet gravida leo cursus. Nam imperdiet eu arcu in volutpat. Aenean hendrerit mauris ut hendrerit facilisis. Sed sagittis sapien ac augue suscipit, ut venenatis justo venenatis.
+
+                    Phasellus auctor congue nisl, vel dapibus risus ultrices vel. Proin fermentum mauris vitae quam tristique, eget vehicula odio fermentum. Vestibulum in varius nisl. Nam ultricies erat in urna aliquam, et fringilla quam bibendum. Vestibulum tristique facilisis risus, at varius orci semper id. Nullam dignissim luctus turpis a fermentum. Vestibulum condimentum lacus at leo vulputate, id dictum sem dictum. Fusce et odio nec tellus semper sodales. Maecenas eu malesuada felis. Praesent quis dolor vitae sem scelerisque hendrerit eget id dolor. Ut nec erat eu urna facilisis aliquet. Sed a tortor a turpis luctus malesuada. Ut euismod sagittis diam, vel sagittis ligula egestas eu. Sed facilisis, dolor vel suscipit mattis, ex ligula facilisis odio, eu sagittis quam ex ut erat.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-end">
+        <div class="col-md-12 text-right">
+            <!-- Tombol Simpan di Baris 3 -->
+            <button class="btn btn-primary">Simpan</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+@code {
+
+    public IEnumerable<MenuItem> MenuItems { get; set; }
+
+    public class MenuItem
+    {
+        public string Text { get; set; }
+        public bool Disabled { get; set; }
+        public bool Separator { get; set; }
+        public IEnumerable<MenuItem> Items { get; set; }
+    }
+
+    protected override void OnInitialized()
+    {
+        MenuItems = new List<MenuItem>()
+        {
+            new MenuItem()
+            {
+                Text = "Date Picker",
+               
+            },
+            new MenuItem()
+            {
+                Text = "Text Box",
+              
+            },
+            new MenuItem()
+            {
+                Text = "Color Picker",
+                Disabled = true
+            },
+            new MenuItem()
+            {
+                Separator = true
+            },
+            new MenuItem()
+            {
+                Text = "Menu",
+               
+            },
+            new MenuItem()
+            {
+                Text = "TreeView",
+              
+            },
+            new MenuItem()
+            {
+                Separator = true
+            },
+            new MenuItem()
+            {
+                Text = "Map",
+                Disabled = true
+            }
+        };
+
+        base.OnInitialized();
+    }
+} *@
+<div class="container">
+    <header>
+        <h1 style="margin: 0; font-size: 24px;">Header Content</h1>
+    </header>
+
+    <div class="content">
+        <div class="column" style="width: 150px;">
+            <h2>Column 1</h2>
+            <p>This is the content of column 1.</p>
+        </div>
+        <div class="column" style="flex: 1;">
+            <h2>Column 2</h2>
+            <p>This is the content of column 2.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Footer Content</p>
+    </footer>
+</div>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0; /* Set margin to 0 */
+    }
+
+    header, footer {
+        color: #333;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .content {
+        flex: 1;
+        display: flex;
+    }
+
+    .column {
+        padding: 20px;
+        border: 1px solid #ddd; /* Optional: Add a border between columns */
+    }
+</style>
+
+@code {
+
+    public IEnumerable<MenuItem> MenuItems { get; set; }
+
+    public class MenuItem
+    {
+        public string Text { get; set; }
+        public bool Disabled { get; set; }
+        public bool Separator { get; set; }
+        public IEnumerable<MenuItem> Items { get; set; }
+    }
+
+    protected override void OnInitialized()
+    {
+        MenuItems = new List<MenuItem>()
+        {
+            new MenuItem()
+            {
+                Text = "Date Picker",
+
+            },
+            new MenuItem()
+            {
+                Text = "Text Box",
+
+            },
+            new MenuItem()
+            {
+                Text = "Color Picker",
+                Disabled = true
+            },
+            new MenuItem()
+            {
+                Separator = true
+            },
+            new MenuItem()
+            {
+                Text = "Menu",
+
+            },
+            new MenuItem()
+            {
+                Text = "TreeView",
+
+            },
+            new MenuItem()
+            {
+                Separator = true
+            },
+            new MenuItem()
+            {
+                Text = "Map",
+                Disabled = true
+            }
+        };
+
+        base.OnInitialized();
+    }
+}
