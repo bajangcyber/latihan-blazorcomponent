@@ -1,0 +1,18 @@
+﻿<div class="vertical-menu">
+    @if (MenuItems != null && MenuItems.Any())
+    {
+        <ul>
+            @foreach (var menuItem in MenuItems)
+            {
+                <li>@menuItem.Text</li>
+            }
+        </ul>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public List<MenuItem> MenuItems { get; set; }
+
+    // Jika Anda memerlukan logika tambahan atau properti, Anda bisa menambahkannya di sini.
+}
