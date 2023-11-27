@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\Script.js"
     },
     {
+      "Id": "C:\\Users\\Famila\\source\\repos\\BlazorCrateComponent\\BlazorCrateComponent\\wwwroot\\css\\MainEntry.css",
+      "PackagePath": "staticwebassets\\css\\MainEntry.css"
+    },
+    {
       "Id": "C:\\Users\\Famila\\source\\repos\\BlazorCrateComponent\\BlazorCrateComponent\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },

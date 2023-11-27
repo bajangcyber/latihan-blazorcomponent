@@ -317,7 +317,7 @@ Phasellus auctor congue nisl, vel dapibus risus ultrices vel. Proin fermentum ma
 }
  *@
 
- @* contoh ke dua *@
+@* contoh ke dua *@
 
 @inherits LayoutComponentBase
 @* <div class="main">
@@ -514,79 +514,49 @@ Phasellus auctor congue nisl, vel dapibus risus ultrices vel. Proin fermentum ma
     }
 </style>
  *@
-
- <style>
- .containerData {
-    max-width: 100%;
-    margin: 50px auto;
-    display: grid;
-    grid-template-columns: 1fr 10fr;
-    grid-template-areas:
-      'empty header header'
-      'sidebar sidebar sidebar'
-      'content content content'
-      'footer footer footer';
-  }
-
-@media screen and (min-width: 667px) {
-    .containerData {
-      grid-template-areas:
-        'empty header header'
-        'sidebar content content'
-        'sidebar content content'
-        'footer footer footer';
+<style>
+    .horizontal-menu {
+        display: flex;
+        justify-content: flex-start;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: lightblue;
     }
-  }
 
-  .item {
-    width: 100%;
-    background-color: rgb(138, 209, 254);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px; /* Mengurangi padding agar tampilan lebih baik */
-    box-sizing: border-box;
-  }
+    .horizontal-menu-item {
+        border-right: 1px solid #bbb;
+    }
 
-  .header {
-    grid-area: header;
-    background-color: lightblue;
-    padding: 10px; /* Padding diatur untuk memisahkan konten dari batas header */
-    height: 80px; /* Setel tinggi header sesuai keinginan Anda */
-  }
+        .horizontal-menu-item:last-child {
+            border-right: none;
+        }
 
-  .empty {
-    grid-area: empty;
-    height: 50px;
-    background-color: transparent;
-  }
+    .horizontal-menu-link {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
 
-  .sidebar {
-    grid-area: sidebar;
-    background-color: rgb(255, 255, 179);
-    padding: 10px;
-  }
+        .horizontal-menu-link:hover {
+            background-color: #111;
+        }
+</style>
 
-  .content {
-    grid-area: content;
-    background-color: rgb(177, 255, 177);
-    max-height: 600px; /* Setel tinggi maksimum sesuai keinginan Anda */
-    overflow-y: auto; /* Tambahkan overflow untuk scroll vertikal jika melebihi tinggi maksimum */
-  }
-
-  .footer {
-    grid-area: footer;
-    background-color: rgb(116, 116, 116);
-  }
-
-  </style>
-
-  <div class="containerData">
-        <div class="item header">header</div>
-        <div class="item sidebar">sidebar</div>
-        <div class="item content">mainconten</div>
-        <div class="item footer">footer</div>        
-      </div>
+<div id="myContainer">
+    <div class="item headerEntry">
+        <ul class="horizontal-menu">
+            <li class="horizontal-menu-item"><a href="#" class="horizontal-menu-link">Pemeriksaan Awal</a></li>
+            <li class="horizontal-menu-item"><a href="#" class="horizontal-menu-link">Laboratorium</a></li>
+            <li class="horizontal-menu-item"><a href="#" class="horizontal-menu-link">Asuhan Keperawatan</a></li>
+        </ul>
+    </div>
+    <div class="item sidebarEntry">sidebar</div>
+    <div class="item contentEntry">mainconten</div>
+    <div class="item footerEntry">footer</div>
+</div>
 
 
 @code {
@@ -612,4 +582,3 @@ Phasellus auctor congue nisl, vel dapibus risus ultrices vel. Proin fermentum ma
     };
 }
 
-    
